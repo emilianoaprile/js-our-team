@@ -107,11 +107,16 @@ for (let i = 0; i < team.length; i++) {
     memberDatas.appendChild(memberName);
     memberName.innerHTML = informazioniMembriTeam.name;
 
-    console.log('Name:', informazioniMembriTeam.name);
+    // creo paragrafo per il ruolo
+    const memberRole = document.createElement('p');
+    memberDatas.appendChild(memberRole);
+    memberRole.innerHTML = informazioniMembriTeam.role;
 
-    console.log('Role:', informazioniMembriTeam.role);
+    // console.log('Name:', informazioniMembriTeam.name);
 
-    console.log('Photo:', informazioniMembriTeam.photo);
+    // console.log('Role:', informazioniMembriTeam.role);
+
+    // console.log('Photo:', informazioniMembriTeam.photo);
 }
 
 
