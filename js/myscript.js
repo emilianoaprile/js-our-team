@@ -64,6 +64,12 @@ console.log(team);
 const containerCardDOMElement = document.querySelector('.container')
 console.log(containerCardDOMElement);
 
+  // creo elemento row nel DOM
+  const rowDOMElement = document.createElement('div')
+  console.log(rowDOMElement);
+
+  rowDOMElement.classList.add('row')
+
 for (let i = 0; i < team.length; i++) {
 
     console.log(i);
@@ -78,8 +84,12 @@ for (let i = 0; i < team.length; i++) {
     // aggiungo la classe all'elemento del appena creato
     memberDatas.classList.add('member-card');
 
-    // appenado al container i div con la classe member-card
-    containerCardDOMElement.appendChild(memberDatas);
+    // appenado al container elemento con classe row
+    containerCardDOMElement.appendChild(rowDOMElement);
+
+    // appendo all'elemento row le member-card
+    rowDOMElement.appendChild(memberDatas);
+    console.log(rowDOMElement);
 
     console.log('Name:', informazioniMembriTeam.name);
 
