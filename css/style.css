@@ -25,7 +25,28 @@ html {
     line-height: 35px;
     font-weight: 100;
     font-size: 16px;
+}
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.member-card {
+    border: 1px solid black; 
+
+}
+
+img {
+    display: block;
 }
 
 

@@ -64,11 +64,11 @@ console.log(team);
 const containerCardDOMElement = document.querySelector('.container')
 console.log(containerCardDOMElement);
 
-  // creo elemento row nel DOM
-  const rowDOMElement = document.createElement('div')
-  console.log(rowDOMElement);
+// creo elemento row nel DOM
+const rowDOMElement = document.createElement('div')
+console.log(rowDOMElement);
 
-  rowDOMElement.classList.add('row')
+rowDOMElement.classList.add('row')
 
 for (let i = 0; i < team.length; i++) {
 
@@ -90,6 +90,17 @@ for (let i = 0; i < team.length; i++) {
     // appendo all'elemento row le member-card
     rowDOMElement.appendChild(memberDatas);
     console.log(rowDOMElement);
+
+    // creo elemento figure mettere dentro le img
+    const figure = document.createElement('figure');
+    memberDatas.appendChild(figure);
+
+    // creo elemento img e inserisco la foto nel tag figure
+    const memberImg = document.createElement('img');
+
+    memberImg.src = informazioniMembriTeam.photo;
+
+    figure.appendChild(memberImg);
 
     console.log('Name:', informazioniMembriTeam.name);
 
