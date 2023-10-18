@@ -36,17 +36,18 @@ html {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
 }
 
 .member-card {
     border: 1px solid black; 
-
+    flex-basis: calc((100% / 12) * 4);
+    padding: 10px;
 }
 
 img {
     display: block;
+    width: 100%;
 }
 
 
