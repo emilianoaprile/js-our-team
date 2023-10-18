@@ -58,3 +58,7 @@ for (let i = 0; i < team.length; i++) {
     console.log('Photo:', informazioniMembriTeam.photo);
 }
 
+// MILESTONE 2
+
+
+
