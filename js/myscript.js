@@ -102,6 +102,11 @@ for (let i = 0; i < team.length; i++) {
 
     figure.appendChild(memberImg);
 
+    // creo un h2 per il nome 
+    const memberName = document.createElement('h2');
+    memberDatas.appendChild(memberName);
+    memberName.innerHTML = informazioniMembriTeam.name;
+
     console.log('Name:', informazioniMembriTeam.name);
 
     console.log('Role:', informazioniMembriTeam.role);
