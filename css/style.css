@@ -17,6 +17,7 @@ html {
 .header-title {
     text-transform: uppercase;
     padding-top: 20px;
+    font-size: 24px;
 }
 
 .header-text {

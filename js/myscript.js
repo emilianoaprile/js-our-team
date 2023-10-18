@@ -42,14 +42,44 @@ const team = [
 
 console.log(team);
 
-// MILESTONE 1
+// MILESTONE 1 
+
+// for (let i = 0; i < team.length; i++) {
+
+//     console.log(i);
+
+//     const informazioniMembriTeam = team[i];
+//     console.log(informazioniMembriTeam);
+
+//     console.log('Name:', informazioniMembriTeam.name);
+
+//     console.log('Role:', informazioniMembriTeam.role);
+
+//     console.log('Photo:', informazioniMembriTeam.photo);
+// }
+
+// MILESTONE 2
+
+// recupero container dove inseriro le cards
+const containerCardDOMElement = document.querySelector('.container')
+console.log(containerCardDOMElement);
 
 for (let i = 0; i < team.length; i++) {
 
     console.log(i);
-
+    // assegne ad ogni indice l'oggetto contenene i dati
     const informazioniMembriTeam = team[i];
     console.log(informazioniMembriTeam);
+
+    // creo elemento div nel DOM
+    const memberDatas = document.createElement('div');
+    console.log(memberDatas);
+
+    // aggiungo la classe all'elemento del appena creato
+    memberDatas.classList.add('member-card');
+
+    // appenado al container i div con la classe member-card
+    containerCardDOMElement.appendChild(memberDatas);
 
     console.log('Name:', informazioniMembriTeam.name);
 
@@ -57,8 +87,6 @@ for (let i = 0; i < team.length; i++) {
 
     console.log('Photo:', informazioniMembriTeam.photo);
 }
-
-// MILESTONE 2
 
 
 
